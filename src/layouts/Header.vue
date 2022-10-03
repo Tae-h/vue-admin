@@ -5,7 +5,7 @@
 <template>
 
   <v-app-bar
-      :clipped-left="currentClipped"
+      :clipped-left="clipped"
       fixed
       dark
       app>
@@ -25,14 +25,14 @@
       <v-icon>mdi-{{ `chevron-${currentMiniVariant ? 'right' : 'left'}` }}</v-icon>
     </v-btn>
 
-    <v-btn
+<!--    <v-btn
         v-if="menuType === 'clipped'"
         icon
         v-model="currentClipped"
         @click.stop="onClick(menuType, currentClipped)"
     >
       <v-icon>mdi-application</v-icon>
-    </v-btn>
+    </v-btn>-->
 
     <v-btn
         v-if="menuType === 'fixed'"
