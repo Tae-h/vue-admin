@@ -67,10 +67,10 @@ export default {
   data () {
     return {
       title: 'title 제목 입니다.',
-      menuType: 'drawer',
-      drawer: false,
+      menuType: 'clipped',
+      drawer: true,
       miniVariant: false,
-      clipped: true,
+      clipped: false,
       fixed: false,
 
       items: [

@@ -11,7 +11,7 @@
       app>
 
     <v-app-bar-nav-icon
-        v-if="menuType === 'drawer'"
+
         v-model="currentDrawer"
         @click.stop="onClick(menuType, currentDrawer)"
     />
